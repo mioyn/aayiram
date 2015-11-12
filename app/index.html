@@ -28,46 +28,84 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">aayiram</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4><a href="http://libsass.org/">Sass</a></h4>
-          <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
-          
-
-          <h4><a href="http://getbootstrap.com/">Bootstrap</a></h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4><a href="http://modernizr.com/">Modernizr</a></h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-          
-        </div>
-      </div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
+<div ng-app="aayiram">
+    <p class="md-body-2">Body copy with medium weight.</p>
+    <md-button class="md-raised">Button</md-button>
+    <p class="md-body-1">Regular body copy <small class="md-caption">with small text</small>.</p>
+    <span class="md-caption">Caption</span>
+    <div ng-controller="DemoController" layout="column">
+        <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter="8px" md-gutter-gt-sm="4px">
+            <md-grid-tile class="red" md-rowspan="2" md-colspan="2">
+                <md-icon md-svg-icon="avatar:svg-1"></md-icon>
+                <md-grid-tile-footer>
+                    <h3>Svg-1</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="green">
+                <md-icon md-svg-icon="avatar:svg-2"></md-icon>
+                <md-grid-tile-footer>
+                    <h3>Svg-2</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="darkBlue">
+                <md-icon md-svg-icon="avatar:svg-3"></md-icon>
+                <md-grid-tile-footer>
+                    <h3>Svg-3</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="blue" md-colspan="2">
+                <md-icon md-svg-icon="avatar:svg-4"></md-icon>
+                <md-grid-tile-footer>
+                    <h3>Svg-4</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="yellow" md-rowspan="2" md-colspan="2">
+                <md-icon md-svg-icon="avatar:svg-5"></md-icon>
+                <md-grid-tile-footer>
+                    <h3>Svg-5</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="pink">
+                <md-icon md-svg-icon="avatar:svg-15"></md-icon>
+                <md-grid-tile-footer>
+                    <h3>Svg-6</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="darkBlue">
+                <md-icon md-svg-icon="avatar:svg-7"></md-icon>
+                <md-grid-tile-footer>
+                    <h3>Svg-7</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="purple">
+                <md-icon md-svg-icon="avatar:svg-8"></md-icon>
+                <md-grid-tile-footer>
+                    <h3>Svg-8</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="deepBlue">
+                <md-icon md-svg-icon="avatar:svg-13"></md-icon>
+                <md-grid-tile-footer>
+                    <h3>Svg-9</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="lightPurple">
+                <md-icon md-svg-icon="avatar:svg-10"></md-icon>
+                <md-grid-tile-footer>
+                    <h3>Svg-10</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="yellow">
+                <md-icon md-svg-icon="avatar:svg-11"></md-icon>
+                <md-grid-tile-footer>
+                    <h3>Svg-11</h3>
+                </md-grid-tile-footer>
+            </md-grid-tile>
+        </md-grid-list>
     </div>
-    
+</div>
+
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -76,6 +114,8 @@
     <script src="/bower_components/angular-animate/angular-animate.js"></script>
     <script src="/bower_components/angular-aria/angular-aria.js"></script>
     <script src="/bower_components/angular-material/angular-material.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/angular-messages/angular-messages.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
